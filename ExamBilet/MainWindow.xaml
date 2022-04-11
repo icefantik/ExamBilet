@@ -18,6 +18,6 @@
             <RowDefinition Height="980*"/>
             <RowDefinition Height="150*"/>
         </Grid.RowDefinitions>
-        <Button Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="1" Click="EnterAccount" FontSize="17" Background="#FFFFFF">Войти</Button>
+        <Button Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="1" Click="Button_Click" FontSize="17" Background="#FFFFFF">Войти</Button>
     </Grid>
 </Window>

@@ -10,7 +10,8 @@ namespace ExamBilet
 {
     class Database
     {
-        private SqlConnection sqlConnection = new SqlConnection(@"Data Source=DESKTOP-PNAU4VT;Initial Catalog=PrepExam;Integrated Security=true");
+        private static string serverName = "DESKTOP-PNAU4VT";
+        private SqlConnection sqlConnection = new SqlConnection($"Data Source={serverName};Initial Catalog=PrepExam;Integrated Security=true");
         public void openConnection()
         {
             if (sqlConnection.State == System.Data.ConnectionState.Closed)
