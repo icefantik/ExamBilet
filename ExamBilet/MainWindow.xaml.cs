@@ -29,9 +29,7 @@ namespace ExamBilet
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            DataTable dataTable = Database.RunQuery();
-            string s1 = dataTable.Rows[0][0].ToString();
-            string s2 = dataTable.Rows[0][1].ToString();
+            table.ItemsSource = Database.GetListElem();
         }
     }
 }
